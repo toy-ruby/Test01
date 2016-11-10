@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Test01.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Test01._default" %>
+﻿<%@ Page Title="Test01" Language="C#" MasterPageFile="~/Test01.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Test01._default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -26,8 +26,10 @@
         <br />
         <asp:Label runat="server" Font-Names="Courier New">Max. Int:</asp:Label>
         <input type="text" id="maxIntText" style="font-family: 'Courier New'" />
-
-        <input type="button" id="inputButton" value="Enter" onclick="getRandomInt()" />
+        <asp:Label runat="server" Font-Names="Courier New">Max. Int:</asp:Label>
+        <asp:Label runat="server" Font-Names="Courier New">Count:</asp:Label>
+        <input type="text" id="countText" style="font-family: 'Courier New'" />
+        
     </div>
     <br />
     <div>
