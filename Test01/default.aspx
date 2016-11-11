@@ -21,11 +21,16 @@
         <asp:Label runat="server" Font-Names="Courier New">Input:</asp:Label>
         <input type="text" id="inputText" style="font-family: 'Courier New'" />
         <br />
+
         <asp:Label runat="server" Font-Names="Courier New">Min. Int:</asp:Label>
         <input type="text" id="minIntText" style="font-family: 'Courier New'" />
         <br />
+
         <asp:Label runat="server" Font-Names="Courier New">Max. Int:</asp:Label>
         <input type="text" id="maxIntText" style="font-family: 'Courier New'" />
+
+        <input type="button" value="Enter" onclick="onClick()" />
+
         <asp:Label runat="server" Font-Names="Courier New">Max. Int:</asp:Label>
         <asp:Label runat="server" Font-Names="Courier New">Count:</asp:Label>
         <input type="text" id="countText" style="font-family: 'Courier New'" />
