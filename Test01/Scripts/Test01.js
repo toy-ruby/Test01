@@ -12,7 +12,7 @@ function getRandomInt(min, max) {
 }
 
 function onClick() {
-    // TODO if count != nothing, loop count times
+    // if count != nothing, loop count times
     var count = $('[id$=countText]').val();
     var maxVal = $('[id$=maxIntText]').val();
     var minVal = $('[id$=minIntText]').val();
@@ -23,7 +23,7 @@ function onClick() {
         $('[id$=outputTextBox]').val(getRandomInt(maxVal, minVal));
     } else {
         for (var i = 0; i < count; i++) {
-            $('[id$=outputTextBox]').val($('[id$=outputTextBox]').val() + " " + getRandomInt(maxVal, minVal));
+            $('[id$=outputTextBox]').val($('[id$=outputTextBox]').val() + getRandomInt(maxVal, minVal) + " ");
         }
     }
     
