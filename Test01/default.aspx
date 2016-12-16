@@ -36,9 +36,18 @@
         <input type="text" id="countText" style="font-family: 'Courier New'" />
         
     </div>
+
     <br />
+
     <div>
         <asp:Label runat="server" Font-Names="Courier New">Output:</asp:Label>
         <asp:TextBox ID="outputTextBox" runat="server" Height="200px" Width="250px" ReadOnly="True" TextMode="MultiLine"></asp:TextBox>
+    </div>
+
+    <div>
+        <asp:TextBox ID="randomOutTextBox" runat="server"></asp:TextBox>
+        <input type="button" value="Get Random Number" onclick="getRandomNumber()" />
+    </div>
+    <div id="errorOutput">
     </div>
 </asp:Content>

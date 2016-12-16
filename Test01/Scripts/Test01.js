@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    
+
 });
 
 function getRandomInt(min, max) {
@@ -25,6 +25,31 @@ function onClick() {
         for (var i = 0; i < count; i++) {
             $('[id$=outputTextBox]').val($('[id$=outputTextBox]').val() + getRandomInt(maxVal, minVal) + " ");
         }
-    }
-    
+    }    
+}
+
+function getRandomNumber()
+{
+    $.ajax({
+        type: "POST",
+        url: "http://localhost:60673/randomnumber.asmx/GetRandomNumber",
+        contentType: "application/json; charset=utf-8",
+        data: {},
+        dataType: "json",
+        success: setOutput,
+        error: throwError
+    });
+}
+
+function setOutput(data, status)
+{
+    var out = data.d;
+    document.getElementById("randomOutTextBox").innerHTML = out;
+}
+
+function throwError(xmlRequest)
+{
+    var out = xmlRequest.status;
+    alert(xmlRequest.status + " " + xmlRequest.statusText + " " + xmlRequest.responseText);
+    document.getElementById("errorOutput").innerHTML = xmlRequest.responseText;
 }
