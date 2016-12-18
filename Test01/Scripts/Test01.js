@@ -34,7 +34,7 @@ function getRandomNumber()
         type: "POST",
         url: "http://localhost:60673/randomnumber.asmx/GetRandomNumber",
         contentType: "application/json; charset=utf-8",
-        data: {},
+        data: {max : 125},
         dataType: "json",
         success: setOutput,
         error: throwError
@@ -44,7 +44,7 @@ function getRandomNumber()
 function setOutput(data, status)
 {
     var out = data.d;
-    document.getElementById("randomOutTextBox").innerHTML = out;
+    document.getElementById("ContentPlaceHolder1_randomOutTextBox").value = out;
 }
 
 function throwError(xmlRequest)

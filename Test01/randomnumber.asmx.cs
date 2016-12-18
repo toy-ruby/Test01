@@ -16,6 +16,10 @@ namespace Test01
     [System.Web.Script.Services.ScriptService]
     public class randomnumber : System.Web.Services.WebService
     {
+        public int max
+        {
+            set; get;
+        }
 
         [WebMethod]
         public string HelloWorld()
@@ -24,10 +28,10 @@ namespace Test01
         }
 
         [WebMethod]
-        public int GetRandomNumber()
+        public int GetRandomNumber(int max)
         {
             int ret = 0;
-            Random r = new Random();
+            Random r = new Random(max);
             ret = r.Next(100);
             return ret;
         }
