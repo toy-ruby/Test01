@@ -1,0 +1,45 @@
+html, body{
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+.title-banner{
+	background: grey;
+	position: fixed;
+    top: 0;
+	border-style: solid;
+	height: 105px;
+	width: 100%;
+	padding: 5px;
+	margin-right: 5px;
+}
+
+.nav-menu{
+	background: grey;
+	margin-top: 125px;
+	position: fixed;
+	left: 0;
+	width: 180px;
+	height: 100%;
+	float: left;
+	padding-left: 5px;
+	padding-right: 0px;
+	padding-top: 3px;
+	padding-bottom: 0px;
+}
+
+.error-banner{
+	padding:0px;
+	width: 75%;
+	height: 180px;
+	border-style: solid;
+	position: fixed;
+	bottom:0;
+	right: 0;
+	float: right;
+	margin-bottom: 5px;
+}
+
+.title{
+    margin-top: 15%;
+}

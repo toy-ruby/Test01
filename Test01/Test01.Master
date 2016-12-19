@@ -5,16 +5,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <asp:ContentPlaceHolder ID="Stylesheets" runat="server">
+        <link rel="stylesheet" type="text/css" href="\CSS\main.css" runat="server" />
+    </asp:ContentPlaceHolder>
     <asp:ContentPlaceHolder ID="head" runat="server">
+
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+    <div class="title-banner">
+        <h2>Title Banner</h2>
     </div>
+    <div class="nav-menu">
+				<a href="https://www.google.com">Google</a>
+				<p>another Link</p>
+				<p>another Link</p>
+				<p>another Link</p>
+			</div>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
     </form>
 </body>
 </html>

@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\main.css" />
     <Content Include="CSS\RandomNumber.css" />
     <Content Include="default.aspx" />
     <Content Include="packages.config" />
