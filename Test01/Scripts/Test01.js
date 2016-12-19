@@ -1,5 +1,36 @@
 ﻿$(document).ready(function () {
+    // Click Random Button
+    $('#RandomButton').click(function(event)
+    {
+        var url = "http://localhost:60673/randomnumber.asmx/GetRandomNumber";
+        $.ajax({
+            type: "POST",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            data: {},
+            dataType: "json",
+            success: setOutput,
+            error: throwError
+        });
+    })
 
+    // Click Ranged Random Button
+    $('#RangedRandomButton').click(function (event) {
+        var url = "http://localhost:60673/randomnumber.asmx/GetRandomNumberRng";
+        var dataObj = {};
+        dataObj.max = $("#maxRng").val();
+        dataObj.min = $("#minRng").val();
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(dataObj),
+            dataType: "json",
+            success: setOutput2,
+            error: throwError
+        });
+    })
 });
 
 function getRandomInt(min, max) {
@@ -34,7 +65,7 @@ function getRandomNumber()
         type: "POST",
         url: "http://localhost:60673/randomnumber.asmx/GetRandomNumber",
         contentType: "application/json; charset=utf-8",
-        data: {max : 125},
+        data: {},
         dataType: "json",
         success: setOutput,
         error: throwError
@@ -45,6 +76,11 @@ function setOutput(data, status)
 {
     var out = data.d;
     document.getElementById("ContentPlaceHolder1_randomOutTextBox").value = out;
+}
+
+function setOutput2(data, status) {
+    var out = data.d;
+    document.getElementById("ContentPlaceHolder1_TextBox2").value = out;
 }
 
 function throwError(xmlRequest)

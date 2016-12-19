@@ -3,14 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="Scripts\Test01.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS\RandomNumber.css" runat="server"/>
     <style type="text/css">
-        #maxIntText {
-            width: 65px;
-        }
-
-        #minIntText {
-            width: 65px;
-        }
+        
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -43,10 +38,19 @@
         <asp:Label runat="server" Font-Names="Courier New">Output:</asp:Label>
         <asp:TextBox ID="outputTextBox" runat="server" Height="200px" Width="250px" ReadOnly="True" TextMode="MultiLine"></asp:TextBox>
     </div>
-
+    <br />
+    <br />
     <div>
         <asp:TextBox ID="randomOutTextBox" runat="server"></asp:TextBox>
-        <input type="button" value="Get Random Number" onclick="getRandomNumber()" />
+        <input type="button" id="RandomButton" value="Get Random Number" />
+    </div>    
+    <br />
+    <br />
+    <div>
+        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <input type="text" class="range" id="minRng" placeholder="min" />
+        <input type="text" class="range" id="maxRng" placeholder="max" />
+        <input type="button" id="RangedRandomButton" value="Ranged Random Number" />
     </div>
     <div id="errorOutput">
     </div>

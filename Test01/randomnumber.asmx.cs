@@ -16,23 +16,27 @@ namespace Test01
     [System.Web.Script.Services.ScriptService]
     public class randomnumber : System.Web.Services.WebService
     {
-        public int max
+        public int Max
         {
             set; get;
         }
 
         [WebMethod]
-        public string HelloWorld()
+        public int GetRandomNumber()
         {
-            return "Hello World";
+            int ret = 0;
+            Max = 100;
+            Random r = new Random();
+            ret = r.Next(Max);
+            return ret;
         }
 
         [WebMethod]
-        public int GetRandomNumber(int max)
+        public int GetRandomNumberRng(int max)
         {
             int ret = 0;
-            Random r = new Random(max);
-            ret = r.Next(100);
+            Random r = new Random();
+            ret = r.Next(max);
             return ret;
         }
     }
