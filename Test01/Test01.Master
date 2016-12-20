@@ -6,9 +6,10 @@
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="Stylesheets" runat="server">
-        <link rel="stylesheet" type="text/css" href="\CSS\main.css" runat="server" />
+        <link rel="stylesheet" type="text/css" href="\CSS\main.css" />
     </asp:ContentPlaceHolder>
     <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="CSS/main.css" rel="stylesheet" />
     </asp:ContentPlaceHolder>
 </head>
 <body>
@@ -16,8 +17,8 @@
         <h2>Title Banner</h2>
     </div>
     <div class="nav-menu">
-        <a href="https://www.google.com">Google</a>
-        <p>another Link</p>
+        <asp:HyperLink NavigateUrl="https://www.google.com" runat="server">Google</asp:HyperLink><br />
+        <asp:HyperLink NavigateUrl="~/stockquote.aspx" runat="server">Stock Quote</asp:HyperLink><br />
         <p>another Link</p>
         <p>another Link</p>
     </div>

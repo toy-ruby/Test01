@@ -71,6 +71,7 @@
     <Content Include="default.aspx" />
     <Content Include="packages.config" />
     <Content Include="randomnumber.asmx" />
+    <Content Include="stockquote.aspx" />
     <Content Include="Test01.Master" />
     <Content Include="Scripts\Test01.js" />
     <None Include="Web.Debug.config">
@@ -95,6 +96,13 @@
     <Compile Include="randomnumber.asmx.cs">
       <DependentUpon>randomnumber.asmx</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="stockquote.aspx.cs">
+      <DependentUpon>stockquote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stockquote.aspx.designer.cs">
+      <DependentUpon>stockquote.aspx</DependentUpon>
     </Compile>
     <Compile Include="Test01.Master.cs">
       <DependentUpon>Test01.Master</DependentUpon>
