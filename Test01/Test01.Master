@@ -9,7 +9,6 @@
         <link rel="stylesheet" type="text/css" href="\CSS\main.css" runat="server" />
     </asp:ContentPlaceHolder>
     <asp:ContentPlaceHolder ID="head" runat="server">
-
     </asp:ContentPlaceHolder>
 </head>
 <body>
@@ -17,13 +16,16 @@
         <h2>Title Banner</h2>
     </div>
     <div class="nav-menu">
-				<a href="https://www.google.com">Google</a>
-				<p>another Link</p>
-				<p>another Link</p>
-				<p>another Link</p>
-			</div>
+        <a href="https://www.google.com">Google</a>
+        <p>another Link</p>
+        <p>another Link</p>
+        <p>another Link</p>
+    </div>
+    <div class="error-banner">
+        <h2 style="color: red;">Error Banner</h2>
+    </div>
     <form id="form1" runat="server">
-        <div>
+        <div class="content">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

@@ -16,7 +16,7 @@ html, body{
 
 .nav-menu{
 	background: grey;
-	margin-top: 125px;
+	margin-top: 50px;
 	position: fixed;
 	left: 0;
 	width: 180px;
@@ -42,4 +42,8 @@ html, body{
 
 .title{
     margin-top: 15%;
+}
+.content{
+    margin-left: 190px;
+    margin-top: 75px;
 }
