@@ -1,4 +1,8 @@
 ﻿$(document).ready(function () {
+
+    // Hide error-banner by default
+    $('.error-banner').hide();
+
     // Click Random Button
     $('#RandomButton').click(function(event)
     {

@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="Test01" Language="C#" MasterPageFile="~/Test01.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Test01._default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="Scripts\Test01.js"></script>
+
     <link rel="stylesheet" type="text/css" href="CSS\RandomNumber.css" runat="server" />
     <style type="text/css">
         

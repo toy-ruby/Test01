@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head runat="server">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="Scripts\Test01.js"></script>
+    <link rel="stylesheet" type="text/css" href="\CSS\main.css" />
     <title></title>
-    <asp:ContentPlaceHolder ID="Stylesheets" runat="server">
-        <link rel="stylesheet" type="text/css" href="\CSS\main.css" />
-    </asp:ContentPlaceHolder>
     <asp:ContentPlaceHolder ID="head" runat="server">
-        <link href="CSS/main.css" rel="stylesheet" />
     </asp:ContentPlaceHolder>
 </head>
 <body>
@@ -17,7 +17,7 @@
         <h2>Title Banner</h2>
     </div>
     <div class="nav-menu">
-        <asp:HyperLink NavigateUrl="https://www.google.com" runat="server">Google</asp:HyperLink><br />
+        <asp:HyperLink NavigateUrl="~/default.aspx" runat="server">Random Numbers</asp:HyperLink><br />
         <asp:HyperLink NavigateUrl="~/stockquote.aspx" runat="server">Stock Quote</asp:HyperLink><br />
         <p>another Link</p>
         <p>another Link</p>
