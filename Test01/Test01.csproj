@@ -71,6 +71,7 @@
     <Content Include="default.aspx" />
     <Content Include="packages.config" />
     <Content Include="randomnumber.asmx" />
+    <Content Include="Scripts\stockquote.js" />
     <Content Include="stockquote.aspx" />
     <Content Include="Test01.Master" />
     <Content Include="Scripts\Test01.js" />

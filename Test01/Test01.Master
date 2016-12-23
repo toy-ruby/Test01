@@ -8,13 +8,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="Scripts\Test01.js"></script>
     <link rel="stylesheet" type="text/css" href="\CSS\main.css" />
-    <title></title>
+    <title><%=this.Page.Title %></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <div class="title-banner">
         <h2>Title Banner</h2>
+        <h4><%=this.Page.Title %></h4>
+        
     </div>
     <div class="nav-menu">
         <asp:HyperLink NavigateUrl="~/default.aspx" runat="server">Random Numbers</asp:HyperLink><br />

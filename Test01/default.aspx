@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Test01" Language="C#" MasterPageFile="~/Test01.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Test01._default" %>
+﻿<%@ Page Title="Random Numbers" Language="C#" MasterPageFile="~/Test01.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Test01._default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
