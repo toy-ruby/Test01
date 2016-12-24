@@ -7,6 +7,7 @@
 <head runat="server">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="Scripts\Test01.js"></script>
+    <script src="Scripts/stockquote.js"></script>
     <link rel="stylesheet" type="text/css" href="\CSS\main.css" />
     <title><%=this.Page.Title %></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
